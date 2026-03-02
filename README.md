@@ -1,18 +1,32 @@
-# Seismic Signal Spectral Analysis
+# RC Eccentric Section Capacity
+
+MATLAB programs for ultimate capacity analysis of eccentrically loaded RC members (rectangular & circular-ring sections)
 
 ## Overview
 
-`main.m` computes the axial force-moment (`Nu-Mu`) interaction response for symmetrically reinforced concrete sections under eccentric compression. The script supports two section types:
+`main.m` is a MATLAB script for estimating the ultimate load capacity of reinforced-concrete sections under combined axial load and bending.
+
+In practical terms, it helps users study how much force and moment a section can carry before reaching its capacity limit. The script supports two section types:
 
 - Rectangular sections
 - Annular sections
 
 The workflow is interactive. The script:
 
-- prompts for material and geometry inputs in the console
-- computes section response using strip discretization and finite-element-style summation
+- prompts for material, geometry, and reinforcement inputs in the console
+- computes section response using section discretization and numerical summation
 - plots a `Nu-Mu Interaction Curve`
 - writes computed results to text files in the current working directory
+
+## Use
+
+This repository is useful for:
+
+- estimating the ultimate axial force-moment (`Nu-Mu`) response of selected reinforced-concrete sections
+- comparing how section size, material grade, and reinforcement layout influence section capacity
+- producing plots and text outputs that can support review, study, or checking against hand calculations
+
+It is a focused analysis script rather than a complete design or code-checking tool.
 
 ## File Layout
 
